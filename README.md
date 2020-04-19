@@ -1,3 +1,3 @@
 # scrabble
 
-![Image](vis.png)
+![Image](freq.png)
