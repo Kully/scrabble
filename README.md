@@ -1,2 +1,3 @@
 # scrabble
 
+![Image](newplot.png)
