@@ -7,8 +7,6 @@ import numpy as np
 from string import ascii_lowercase
 
 
-alphabet = list(ascii_lowercase)
-
 letter_count_map = {
 	'a': 9,
 	'b': 2,
@@ -71,6 +69,7 @@ filename = 'Collins Scrabble Words (2015).txt'
 with open(filename, 'r') as f:
 	LEGAL_SCRABBLE_WORDS = f.readlines()
 
+
 # count letters in all legal words
 collinsLetter_count_map = {}
 for letter in ascii_lowercase:
@@ -82,6 +81,8 @@ for letter in ascii_lowercase:
 lettersInCollins = 1.0 * sum(collinsLetter_count_map.values())
 scrabbleTileCount = 1.0 * sum(letter_count_map.values())
 
+
+alphabet = list(ascii_lowercase)
 trace0 = {
 	'x': alphabet,
 	'y': [collinsLetter_count_map[k]/lettersInCollins for k in alphabet],
