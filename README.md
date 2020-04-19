@@ -1,3 +1,3 @@
 # scrabble
 
-![Image](newplot.png)
+![Image](vis.png)
